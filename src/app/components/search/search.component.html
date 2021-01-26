@@ -1,0 +1,8 @@
+<app-cards [items]="artists"></app-cards>
+
+<div
+  *ngIf="!artists.length"
+  class="d-flex justify-content-center align-items-center flex-column"
+>
+  <app-loading [loading]="true" message="Loading"></app-loading>
+</div>

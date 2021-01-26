@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "spotify-clone-app"
+  "defaultProject": "spotify-clone-app",
+  "cli": {
+    "analytics": "f45fa691-3406-4764-9018-5df2f3bbbf5b"
+  }
 }

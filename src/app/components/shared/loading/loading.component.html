@@ -1,0 +1,19 @@
+<div class="my-container">
+  <ng-template #customLoadingTemplate>
+    <div class="d-flex justify-content-center align-items-center">
+      <h3 class="">{{ message }}</h3>
+    </div>
+  </ng-template>
+
+  <ngx-loading
+    [show]="loading"
+    [config]="{
+      backdropBackgroundColour: 'rgba(255,255,255,0.1)',
+      backdropBorderRadius: '10px',
+      primaryColour: '#ffffff',
+      secondaryColour: '#28a745',
+      tertiaryColour: '#ffffff'
+    }"
+    [template]="customLoadingTemplate"
+  ></ngx-loading>
+</div>

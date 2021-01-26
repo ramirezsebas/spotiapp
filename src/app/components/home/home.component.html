@@ -1,0 +1,12 @@
+<app-loading
+  *ngIf="!newReleases"
+  [loading]="true"
+  message="Loading"
+></app-loading>
+
+<div *ngIf="error" class="alert alert-danger">
+  <h3>Error</h3>
+  <p>{{ errorMessage }}</p>
+</div>
+
+<app-cards [items]="newReleases"></app-cards>
