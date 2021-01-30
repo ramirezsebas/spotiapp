@@ -14,7 +14,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/${query}`;
 
     const header = {
-      Authorization: 'Bearer Key',
+      Authorization: 'Bearer [ACA DEBE IR TU CLAVE]',
     };
 
     return this._http.get(url, {
